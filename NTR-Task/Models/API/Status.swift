@@ -8,6 +8,5 @@
 import Foundation
 
 struct Status: Decodable {
-    var object_id: String? = nil
-    var tag: Int? = nil
+    var status: StatusGuts? = nil
 }

@@ -10,15 +10,24 @@
 		53719F8E8DAC2E7C9B3F4B32 /* Pods_NTR_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8DA0EFD7B42F8ED90C4BE4 /* Pods_NTR_Task.framework */; };
 		930DC642265925A2006905C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC641265925A2006905C5 /* AppDelegate.swift */; };
 		930DC644265925A2006905C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC643265925A2006905C5 /* SceneDelegate.swift */; };
-		930DC646265925A2006905C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC645265925A2006905C5 /* ViewController.swift */; };
+		930DC646265925A2006905C5 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC645265925A2006905C5 /* ViewControllerMain.swift */; };
 		930DC649265925A2006905C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930DC647265925A2006905C5 /* Main.storyboard */; };
 		930DC64B265925A3006905C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930DC64A265925A3006905C5 /* Assets.xcassets */; };
 		930DC64E265925A3006905C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930DC64C265925A3006905C5 /* LaunchScreen.storyboard */; };
 		930DC65B2659261C006905C5 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC65A2659261C006905C5 /* ApiClient.swift */; };
 		930DC660265929AF006905C5 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC65F265929AF006905C5 /* Entity.swift */; };
 		930DC664265929D9006905C5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC663265929D9006905C5 /* Location.swift */; };
-		930DC66726592A68006905C5 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66626592A68006905C5 /* Object.swift */; };
+		930DC66726592A68006905C5 /* ObjectGuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66626592A68006905C5 /* ObjectGuts.swift */; };
 		930DC66A26592B0E006905C5 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66926592B0E006905C5 /* Status.swift */; };
+		930DC6702659303E006905C5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66F2659303E006905C5 /* Repository.swift */; };
+		930DC675265930E5006905C5 /* ObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC673265930E5006905C5 /* ObjectCell.swift */; };
+		930DC676265930E5006905C5 /* ObjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930DC674265930E5006905C5 /* ObjectCell.xib */; };
+		930DC67B26593628006905C5 /* ObjectWithStatuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC67A26593628006905C5 /* ObjectWithStatuses.swift */; };
+		930DC67F265940C4006905C5 /* EntityWithCustomObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC67E265940C4006905C5 /* EntityWithCustomObjects.swift */; };
+		930DC687265958AE006905C5 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC686265958AE006905C5 /* Object.swift */; };
+		930DC68A26597090006905C5 /* StatusGuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC68926597090006905C5 /* StatusGuts.swift */; };
+		934AFA6226598FDC007FD9C8 /* ViewControllerDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934AFA6126598FDC007FD9C8 /* ViewControllerDescription.swift */; };
+		934AFA6526599766007FD9C8 /* DescriptionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934AFA6426599766007FD9C8 /* DescriptionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +36,7 @@
 		930DC63E265925A2006905C5 /* NTR-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTR-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930DC641265925A2006905C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930DC643265925A2006905C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		930DC645265925A2006905C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		930DC645265925A2006905C5 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 		930DC648265925A2006905C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		930DC64A265925A3006905C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930DC64D265925A3006905C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,8 +44,17 @@
 		930DC65A2659261C006905C5 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		930DC65F265929AF006905C5 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		930DC663265929D9006905C5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		930DC66626592A68006905C5 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		930DC66626592A68006905C5 /* ObjectGuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectGuts.swift; sourceTree = "<group>"; };
 		930DC66926592B0E006905C5 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		930DC66F2659303E006905C5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		930DC673265930E5006905C5 /* ObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCell.swift; sourceTree = "<group>"; };
+		930DC674265930E5006905C5 /* ObjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectCell.xib; sourceTree = "<group>"; };
+		930DC67A26593628006905C5 /* ObjectWithStatuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectWithStatuses.swift; sourceTree = "<group>"; };
+		930DC67E265940C4006905C5 /* EntityWithCustomObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityWithCustomObjects.swift; sourceTree = "<group>"; };
+		930DC686265958AE006905C5 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		930DC68926597090006905C5 /* StatusGuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusGuts.swift; sourceTree = "<group>"; };
+		934AFA6126598FDC007FD9C8 /* ViewControllerDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDescription.swift; sourceTree = "<group>"; };
+		934AFA6426599766007FD9C8 /* DescriptionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionData.swift; sourceTree = "<group>"; };
 		B2D1692D3F8762677401FC42 /* Pods-NTR-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTR-Task.debug.xcconfig"; path = "Target Support Files/Pods-NTR-Task/Pods-NTR-Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +100,7 @@
 		930DC640265925A2006905C5 /* NTR-Task */ = {
 			isa = PBXGroup;
 			children = (
+				930DC67226593054006905C5 /* Support */,
 				930DC66D26592D7B006905C5 /* Views */,
 				930DC66C26592D6B006905C5 /* Controllers */,
 				930DC65D2659299C006905C5 /* Models */,
@@ -90,7 +109,6 @@
 				930DC64A265925A3006905C5 /* Assets.xcassets */,
 				930DC64C265925A3006905C5 /* LaunchScreen.storyboard */,
 				930DC64F265925A3006905C5 /* Info.plist */,
-				930DC65A2659261C006905C5 /* ApiClient.swift */,
 			);
 			path = "NTR-Task";
 			sourceTree = "<group>";
@@ -98,7 +116,10 @@
 		930DC65D2659299C006905C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				930DC67926593601006905C5 /* App */,
 				930DC65E265929A2006905C5 /* API */,
+				930DC66F2659303E006905C5 /* Repository.swift */,
+				934AFA6426599766007FD9C8 /* DescriptionData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,8 +129,10 @@
 			children = (
 				930DC65F265929AF006905C5 /* Entity.swift */,
 				930DC663265929D9006905C5 /* Location.swift */,
-				930DC66626592A68006905C5 /* Object.swift */,
+				930DC66626592A68006905C5 /* ObjectGuts.swift */,
+				930DC686265958AE006905C5 /* Object.swift */,
 				930DC66926592B0E006905C5 /* Status.swift */,
+				930DC68926597090006905C5 /* StatusGuts.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -117,7 +140,9 @@
 		930DC66C26592D6B006905C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				930DC645265925A2006905C5 /* ViewController.swift */,
+				930DC673265930E5006905C5 /* ObjectCell.swift */,
+				930DC645265925A2006905C5 /* ViewControllerMain.swift */,
+				934AFA6126598FDC007FD9C8 /* ViewControllerDescription.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,8 +151,26 @@
 			isa = PBXGroup;
 			children = (
 				930DC647265925A2006905C5 /* Main.storyboard */,
+				930DC674265930E5006905C5 /* ObjectCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		930DC67226593054006905C5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				930DC65A2659261C006905C5 /* ApiClient.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		930DC67926593601006905C5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				930DC67A26593628006905C5 /* ObjectWithStatuses.swift */,
+				930DC67E265940C4006905C5 /* EntityWithCustomObjects.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		E8BC35DDB729C8750EB8ED9C /* Frameworks */ = {
@@ -199,6 +242,7 @@
 			files = (
 				930DC64E265925A3006905C5 /* LaunchScreen.storyboard in Resources */,
 				930DC64B265925A3006905C5 /* Assets.xcassets in Resources */,
+				930DC676265930E5006905C5 /* ObjectCell.xib in Resources */,
 				930DC649265925A2006905C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,14 +296,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930DC646265925A2006905C5 /* ViewController.swift in Sources */,
+				930DC646265925A2006905C5 /* ViewControllerMain.swift in Sources */,
 				930DC660265929AF006905C5 /* Entity.swift in Sources */,
 				930DC642265925A2006905C5 /* AppDelegate.swift in Sources */,
 				930DC66A26592B0E006905C5 /* Status.swift in Sources */,
-				930DC66726592A68006905C5 /* Object.swift in Sources */,
+				930DC67B26593628006905C5 /* ObjectWithStatuses.swift in Sources */,
+				930DC675265930E5006905C5 /* ObjectCell.swift in Sources */,
+				930DC68A26597090006905C5 /* StatusGuts.swift in Sources */,
+				930DC66726592A68006905C5 /* ObjectGuts.swift in Sources */,
+				934AFA6226598FDC007FD9C8 /* ViewControllerDescription.swift in Sources */,
 				930DC644265925A2006905C5 /* SceneDelegate.swift in Sources */,
 				930DC664265929D9006905C5 /* Location.swift in Sources */,
 				930DC65B2659261C006905C5 /* ApiClient.swift in Sources */,
+				930DC687265958AE006905C5 /* Object.swift in Sources */,
+				930DC67F265940C4006905C5 /* EntityWithCustomObjects.swift in Sources */,
+				934AFA6526599766007FD9C8 /* DescriptionData.swift in Sources */,
+				930DC6702659303E006905C5 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

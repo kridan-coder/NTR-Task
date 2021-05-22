@@ -25,6 +25,10 @@ class ApiClient {
         logic.getEntityData(onSuccess: onSuccess)
     }
     
+    func getObjectsStatuses(onSuccess: @escaping ([Status]) -> Void) {
+        logic.getObjectsStatuses(onSuccess: onSuccess)
+    }
+    
     private class ApiClientLogic {
         let baseURL = "https://dl.dropboxusercontent.com/s/"
         
@@ -39,7 +43,6 @@ class ApiClient {
                         print("Error: response is empty.")
                         return
                     }
-                    
                     onSuccess(try! JSONDecoder().decode(Entity.self, from: safeData))
                     
                 }
@@ -47,7 +50,7 @@ class ApiClient {
         }
         
         func getObjectsStatuses(onSuccess: @escaping ([Status]) -> Void){
-            AF.request(baseURL + "c9o1x8i45q5872k/statuses.json", method: .get).response  { response in
+            AF.request(baseURL + "c9o1x8i45q5872k/statuses.json", method: .get, encoding:  URLEncoding.default).response  { response in
                 switch response.result{
                 case .failure(let error):
                     print(error.errorDescription ?? "Unhandled error while requesting Object Statuses.")
@@ -67,8 +70,6 @@ class ApiClient {
     
     
 }
-
-
 
 extension ApiClient: NSCopying {
     func copy(with zone: NSZone? = nil) -> Any {

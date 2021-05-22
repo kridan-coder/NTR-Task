@@ -1,5 +1,5 @@
 //
-//  Entity.swift
+//  Object.swift
 //  NTR-Task
 //
 //  Created by KriDan on 22.05.2021.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Entity: Decodable {
+struct ObjectGuts: Decodable {
     var name: String? = nil
-    var location: Location? = nil
-    var objects: Object? = nil
+    var object_id: Int? = nil
+    var title: String? = nil
 }

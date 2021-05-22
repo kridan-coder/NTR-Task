@@ -8,7 +8,5 @@
 import Foundation
 
 struct Object: Decodable {
-    var name: String? = nil
-    var object_id: Int? = nil
-    var title: String? = nil
+    var object: [ObjectGuts]? = nil
 }
