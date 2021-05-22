@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53719F8E8DAC2E7C9B3F4B32 /* Pods_NTR_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8DA0EFD7B42F8ED90C4BE4 /* Pods_NTR_Task.framework */; };
 		930DC642265925A2006905C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC641265925A2006905C5 /* AppDelegate.swift */; };
 		930DC644265925A2006905C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC643265925A2006905C5 /* SceneDelegate.swift */; };
 		930DC646265925A2006905C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC645265925A2006905C5 /* ViewController.swift */; };
 		930DC649265925A2006905C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930DC647265925A2006905C5 /* Main.storyboard */; };
 		930DC64B265925A3006905C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930DC64A265925A3006905C5 /* Assets.xcassets */; };
 		930DC64E265925A3006905C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930DC64C265925A3006905C5 /* LaunchScreen.storyboard */; };
+		930DC65B2659261C006905C5 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC65A2659261C006905C5 /* ApiClient.swift */; };
+		930DC660265929AF006905C5 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC65F265929AF006905C5 /* Entity.swift */; };
+		930DC664265929D9006905C5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC663265929D9006905C5 /* Location.swift */; };
+		930DC66726592A68006905C5 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66626592A68006905C5 /* Object.swift */; };
+		930DC66A26592B0E006905C5 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DC66926592B0E006905C5 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37AA87E33B8CBF8A84499E34 /* Pods-NTR-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTR-Task.release.xcconfig"; path = "Target Support Files/Pods-NTR-Task/Pods-NTR-Task.release.xcconfig"; sourceTree = "<group>"; };
+		8B8DA0EFD7B42F8ED90C4BE4 /* Pods_NTR_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTR_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930DC63E265925A2006905C5 /* NTR-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTR-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930DC641265925A2006905C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930DC643265925A2006905C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		930DC64A265925A3006905C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930DC64D265925A3006905C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		930DC64F265925A3006905C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930DC65A2659261C006905C5 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		930DC65F265929AF006905C5 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		930DC663265929D9006905C5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		930DC66626592A68006905C5 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		930DC66926592B0E006905C5 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		B2D1692D3F8762677401FC42 /* Pods-NTR-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTR-Task.debug.xcconfig"; path = "Target Support Files/Pods-NTR-Task/Pods-NTR-Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53719F8E8DAC2E7C9B3F4B32 /* Pods_NTR_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EF88A17584104EB909BD3FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2D1692D3F8762677401FC42 /* Pods-NTR-Task.debug.xcconfig */,
+				37AA87E33B8CBF8A84499E34 /* Pods-NTR-Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		930DC635265925A2006905C5 = {
 			isa = PBXGroup;
 			children = (
 				930DC640265925A2006905C5 /* NTR-Task */,
 				930DC63F265925A2006905C5 /* Products */,
+				8EF88A17584104EB909BD3FA /* Pods */,
+				E8BC35DDB729C8750EB8ED9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,60 @@
 		930DC640265925A2006905C5 /* NTR-Task */ = {
 			isa = PBXGroup;
 			children = (
+				930DC66D26592D7B006905C5 /* Views */,
+				930DC66C26592D6B006905C5 /* Controllers */,
+				930DC65D2659299C006905C5 /* Models */,
 				930DC641265925A2006905C5 /* AppDelegate.swift */,
 				930DC643265925A2006905C5 /* SceneDelegate.swift */,
-				930DC645265925A2006905C5 /* ViewController.swift */,
-				930DC647265925A2006905C5 /* Main.storyboard */,
 				930DC64A265925A3006905C5 /* Assets.xcassets */,
 				930DC64C265925A3006905C5 /* LaunchScreen.storyboard */,
 				930DC64F265925A3006905C5 /* Info.plist */,
+				930DC65A2659261C006905C5 /* ApiClient.swift */,
 			);
 			path = "NTR-Task";
+			sourceTree = "<group>";
+		};
+		930DC65D2659299C006905C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				930DC65E265929A2006905C5 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		930DC65E265929A2006905C5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				930DC65F265929AF006905C5 /* Entity.swift */,
+				930DC663265929D9006905C5 /* Location.swift */,
+				930DC66626592A68006905C5 /* Object.swift */,
+				930DC66926592B0E006905C5 /* Status.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		930DC66C26592D6B006905C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				930DC645265925A2006905C5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		930DC66D26592D7B006905C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				930DC647265925A2006905C5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8BC35DDB729C8750EB8ED9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B8DA0EFD7B42F8ED90C4BE4 /* Pods_NTR_Task.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 930DC652265925A3006905C5 /* Build configuration list for PBXNativeTarget "NTR-Task" */;
 			buildPhases = (
+				73DDF1BB99E51FE7EB4BDBDE /* [CP] Check Pods Manifest.lock */,
 				930DC63A265925A2006905C5 /* Sources */,
 				930DC63B265925A2006905C5 /* Frameworks */,
 				930DC63C265925A2006905C5 /* Resources */,
+				98F50C80928034D31A42A408 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +205,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73DDF1BB99E51FE7EB4BDBDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTR-Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F50C80928034D31A42A408 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTR-Task/Pods-NTR-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTR-Task/Pods-NTR-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTR-Task/Pods-NTR-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		930DC63A265925A2006905C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				930DC646265925A2006905C5 /* ViewController.swift in Sources */,
+				930DC660265929AF006905C5 /* Entity.swift in Sources */,
 				930DC642265925A2006905C5 /* AppDelegate.swift in Sources */,
+				930DC66A26592B0E006905C5 /* Status.swift in Sources */,
+				930DC66726592A68006905C5 /* Object.swift in Sources */,
 				930DC644265925A2006905C5 /* SceneDelegate.swift in Sources */,
+				930DC664265929D9006905C5 /* Location.swift in Sources */,
+				930DC65B2659261C006905C5 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +403,7 @@
 		};
 		930DC653265925A3006905C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D1692D3F8762677401FC42 /* Pods-NTR-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +423,7 @@
 		};
 		930DC654265925A3006905C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AA87E33B8CBF8A84499E34 /* Pods-NTR-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
