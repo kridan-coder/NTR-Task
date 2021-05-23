@@ -21,6 +21,7 @@ class ViewControllerMain: UIViewController {
         super.viewDidLoad()
         initTableView()
         Repository.shared.getEntity{response in
+            guard response != nil else {return}
             self.dataSet = response
             self.title = self.dataSet.name
             self.activityIndicator.stopAnimating()

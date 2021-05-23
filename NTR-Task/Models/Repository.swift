@@ -20,7 +20,7 @@ class Repository {
     
     static var shared = Repository()
     
-    func getEntity(onSuccess: @escaping (EntityWithCustomObjects) -> Void){
+    func getEntity(onSuccess: @escaping (EntityWithCustomObjects?) -> Void){
         logic.getEntity(onSuccess: onSuccess)
     }
     
@@ -28,22 +28,35 @@ class Repository {
     private class RepositoryLogic {
         
         var entityWithCustomObjects: EntityWithCustomObjects!
+        {
+            didSet {
+                RealmHepler.setDataToDatabase(entityWithCustomObjects)
+            }
+        }
         var objectsWithStatuses = [ObjectWithStatuses]()
         
         var statuses: [Status]!
         var entity: Entity!
         
         
-        func getEntity(onSuccess: @escaping (EntityWithCustomObjects) -> Void) {
-            sendRequestEntity { [weak self]response in
-                self?.entity = response
-                
-                self?.sendRequestStatuses{ response in
-                    self?.statuses = response
-                    self?.convertAndSort()
-                    onSuccess((self?.entityWithCustomObjects)!)
+        func getEntity(onSuccess: @escaping (EntityWithCustomObjects?) -> Void) {
+            
+            if Reachability.isConnectedToNetwork(){
+                sendRequestEntity { [weak self]response in
+                    self?.entity = response
+                    
+                    self?.sendRequestStatuses{ response in
+                        self?.statuses = response
+                        self?.convertAndSort()
+                        onSuccess((self?.entityWithCustomObjects)!)
+                    }
                 }
             }
+            else {
+                onSuccess(RealmHepler.getDataFromDatabase())
+            }
+            
+
         }
         
 

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Object: Decodable {
+struct ObjectAPI: Decodable {
     var object: [ObjectGuts]? = nil
 }

@@ -7,4 +7,5 @@ target 'NTR-Task' do
 
   # Pods for NTR-Task
   pod 'Alamofire'
+  pod 'RealmSwift'
 end

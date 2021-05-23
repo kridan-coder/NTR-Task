@@ -10,5 +10,5 @@ import Foundation
 struct Entity: Decodable {
     var name: String? = nil
     var location: Location? = nil
-    var objects: Object? = nil
+    var objects: ObjectAPI? = nil
 }

@@ -19,7 +19,7 @@ class ObjectCell: UITableViewCell {
     
     var data: ObjectWithStatuses! {
         didSet{
-            if let statuses = data.statuses {
+            if let statuses = data.statuses, data.statuses?.count != 0 {
                 if statuses.count == 1 {
                     icon1.isHidden = false
                     icon2.isHidden = true
